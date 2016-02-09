@@ -18,6 +18,6 @@ void drawRect(int x, int y, int radius) {
 	else {
 		// stroke((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
 		strokeWeight(1);
-		rect(x,y,radius*2/3,radius*3/2);
+		ellipse(x,y,radius*2/3,radius*3/2);
 	}
 }
