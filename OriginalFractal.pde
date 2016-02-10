@@ -10,14 +10,14 @@ void draw() {
 
 void drawRect(int x, int y, int radius) {
 	if(radius > 20) {
-		drawRect(x+radius/4,y,radius/2);
-		drawRect(x,y+radius/4,radius/2);
-		drawRect(x-radius/4,y,radius/2);
-		drawRect(x,y-radius/4,radius/2);
+		drawRect((int)(x+radius/4),(int)y,(int)(radius/2));
+		drawRect((int)(x),(int)(y+radius/4),(int)(radius/2));
+		drawRect((int)(x-radius/4),(int)y,(int)(radius/2));
+		drawRect((int)(x),(int)(y-radius/4),(int)(radius/2));
 	}
 	else {
 		// stroke((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
 		strokeWeight(1);
-		ellipse(x,y,radius*3,radius*3);
+		ellipse(x,y,(int)(radius*3),(int)(radius*3));
 	}
 }
